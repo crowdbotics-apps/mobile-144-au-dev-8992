@@ -1,6 +1,20 @@
 import { put, call, all, spawn, takeEvery } from "redux-saga/effects"
 import { apiService } from "./services"
 import * as types from "./constants"
+function* newplugin14august_get__readWorker(action) {
+  try {
+    const result = yield call(apiService.newplugin14august_get__read, action)
+    yield put(actions.newplugin14august_get__readSucceeded(result))
+  } catch (err) {
+    yield put(actions.newplugin14august_get__readFailed(err))
+  }
+}
+function* newplugin14august_get__readWatcher() {
+  yield takeEvery(
+    types.NEWPLUGIN14AUGUST_GET__READ,
+    newplugin14august_get__readWorker
+  )
+}
 function* plugin11_get__readWorker(action) {
   try {
     const result = yield call(apiService.plugin11_get__read, action)
@@ -289,6 +303,7 @@ function* rest_auth_user_partial_updateWatcher() {
 }
 export default function* rootSaga() {
   const sagas = [
+    newplugin14august_get__readWatcher,
     plugin11_get__readWatcher,
     api_v1_customtext_listWatcher,
     api_v1_customtext_readWatcher,

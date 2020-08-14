@@ -4,6 +4,9 @@ const initialState = {}
 
 export default function apiReducer(state = initialState, action) {
   switch (action.type) {
+    case types.NEWPLUGIN14AUGUST_GET__READ:
+    case types.NEWPLUGIN14AUGUST_GET__READ_SUCCEEDED:
+    case types.NEWPLUGIN14AUGUST_GET__READ_FAILED:
     case types.PLUGIN11_GET__READ:
     case types.PLUGIN11_GET__READ_SUCCEEDED:
     case types.PLUGIN11_GET__READ_FAILED:
