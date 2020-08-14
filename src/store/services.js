@@ -17,6 +17,11 @@ const mobile144augAPI = axios.create({
 function newplugin14august_get__read() {
   return newPlugin14August.get(`/`)
 }
+function newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_list() {
+  return newPlugin14August.get(
+    `https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/8992/storyboard/9884/`
+  )
+}
 function plugin11_get__read() {
   return plugin11.get(`/`)
 }
@@ -88,6 +93,7 @@ function rest_auth_user_partial_update(requestBody) {
 }
 export const apiService = {
   newplugin14august_get__read,
+  newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_list,
   plugin11_get__read,
   api_v1_customtext_list,
   api_v1_customtext_read,

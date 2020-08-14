@@ -15,6 +15,33 @@ function* newplugin14august_get__readWatcher() {
     newplugin14august_get__readWorker
   )
 }
+function* newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_listWorker(
+  action
+) {
+  try {
+    const result = yield call(
+      apiService.newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_list,
+      action
+    )
+    yield put(
+      actions.newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_listSucceeded(
+        result
+      )
+    )
+  } catch (err) {
+    yield put(
+      actions.newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_listFailed(
+        err
+      )
+    )
+  }
+}
+function* newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_listWatcher() {
+  yield takeEvery(
+    types.NEWPLUGIN14AUGUST_GET_HTTPS__CROWDBOTICSSLACKDEVHEROKUAPPCOM_DASHBOARD_APP_8992_STORYBOARD_9884_LIST,
+    newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_listWorker
+  )
+}
 function* plugin11_get__readWorker(action) {
   try {
     const result = yield call(apiService.plugin11_get__read, action)
@@ -304,6 +331,7 @@ function* rest_auth_user_partial_updateWatcher() {
 export default function* rootSaga() {
   const sagas = [
     newplugin14august_get__readWatcher,
+    newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_listWatcher,
     plugin11_get__readWatcher,
     api_v1_customtext_listWatcher,
     api_v1_customtext_readWatcher,
