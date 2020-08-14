@@ -5,9 +5,12 @@ const plugin11 = axios.create({
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 const mobile144augAPI = axios.create({
-  baseURL: "https://mobile-144-aug-dev-8992-prod.herokuapp.com/",
+  baseURL: "https://mobile-144-aug-dev-8992.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
+function plugin11_get__read() {
+  return plugin11.get(`/`)
+}
 function api_v1_customtext_list() {
   return mobile144augAPI.get(`/api/v1/customtext/`)
 }
@@ -75,6 +78,7 @@ function rest_auth_user_partial_update(requestBody) {
   return mobile144augAPI.patch(`/rest-auth/user/`, requestBody)
 }
 export const apiService = {
+  plugin11_get__read,
   api_v1_customtext_list,
   api_v1_customtext_read,
   api_v1_customtext_update,
