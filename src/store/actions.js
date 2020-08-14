@@ -288,14 +288,14 @@ export const plugin11_get__readFailed = error => ({
   type: types.PLUGIN11_GET__READ_FAILED,
   error
 })
-export const newplugin14august_get__read = () => ({
-  type: types.NEWPLUGIN14AUGUST_GET__READ
+export const newplugin14august_get__list = () => ({
+  type: types.NEWPLUGIN14AUGUST_GET__LIST
 })
-export const newplugin14august_get__readSucceeded = response => ({
-  type: types.NEWPLUGIN14AUGUST_GET__READ_SUCCEEDED,
+export const newplugin14august_get__listSucceeded = response => ({
+  type: types.NEWPLUGIN14AUGUST_GET__LIST_SUCCEEDED,
   response
 })
-export const newplugin14august_get__readFailed = error => ({
-  type: types.NEWPLUGIN14AUGUST_GET__READ_FAILED,
+export const newplugin14august_get__listFailed = error => ({
+  type: types.NEWPLUGIN14AUGUST_GET__LIST_FAILED,
   error
 })
