@@ -277,11 +277,13 @@ export const rest_auth_user_partial_updateFailed = error => ({
   type: types.REST_AUTH_USER_PARTIAL_UPDATE_FAILED,
   error
 })
+
 export const plugin11_get__read = () => ({ type: types.PLUGIN11_GET__READ })
 export const plugin11_get__readSucceeded = response => ({
   type: types.PLUGIN11_GET__READ_SUCCEEDED,
   response
 })
+
 export const plugin11_get__readFailed = error => ({
   type: types.PLUGIN11_GET__READ_FAILED,
   error

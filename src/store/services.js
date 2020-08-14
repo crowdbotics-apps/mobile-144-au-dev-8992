@@ -1,4 +1,17 @@
 import axios from "axios"
+import {
+  NEW_PLUGIN_14_AUGUST_USERNAME,
+  NEW_PLUGIN_14_AUGUST_PASSWORD
+} from "react-native-dotenv"
+const newPlugin14August = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/8992/storyboard/9884/",
+  auth: {
+    username: NEW_PLUGIN_14_AUGUST_USERNAME,
+    password: NEW_PLUGIN_14_AUGUST_PASSWORD
+  },
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const plugin11 = axios.create({
   baseURL:
     "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/7307/storyboard/8491/",
