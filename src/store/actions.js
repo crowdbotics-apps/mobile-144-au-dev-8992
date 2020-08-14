@@ -288,31 +288,3 @@ export const plugin11_get__readFailed = error => ({
   type: types.PLUGIN11_GET__READ_FAILED,
   error
 })
-
-export const newplugin14august_get__read = () => ({
-  type: types.NEWPLUGIN14AUGUST_GET__READ
-})
-
-export const newplugin14august_get__readSucceeded = response => ({
-  type: types.NEWPLUGIN14AUGUST_GET__READ_SUCCEEDED,
-  response
-})
-
-export const newplugin14august_get__readFailed = error => ({
-  type: types.NEWPLUGIN14AUGUST_GET__READ_FAILED,
-  error
-})
-export const newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_list = () => ({
-  type:
-    types.NEWPLUGIN14AUGUST_GET_HTTPS__CROWDBOTICSSLACKDEVHEROKUAPPCOM_DASHBOARD_APP_8992_STORYBOARD_9884_LIST
-})
-export const newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_listSucceeded = response => ({
-  type:
-    types.NEWPLUGIN14AUGUST_GET_HTTPS__CROWDBOTICSSLACKDEVHEROKUAPPCOM_DASHBOARD_APP_8992_STORYBOARD_9884_LIST_SUCCEEDED,
-  response
-})
-export const newplugin14august_get_https__crowdboticsslackdevherokuappcom_dashboard_app_8992_storyboard_9884_listFailed = error => ({
-  type:
-    types.NEWPLUGIN14AUGUST_GET_HTTPS__CROWDBOTICSSLACKDEVHEROKUAPPCOM_DASHBOARD_APP_8992_STORYBOARD_9884_LIST_FAILED,
-  error
-})
