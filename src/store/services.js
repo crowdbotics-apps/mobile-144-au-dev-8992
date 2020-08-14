@@ -11,7 +11,7 @@ const plugin11 = axios.create({
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 const mobile144augAPI = axios.create({
-  baseURL: "https://mobile-144-aug-dev-8992.botics.co/",
+  baseURL: "https://mobile-144-au-dev-8992.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function newplugin14august_get__list() {
